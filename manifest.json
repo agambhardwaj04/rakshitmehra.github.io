@@ -1,15 +1,18 @@
 {
-  "short_name": "My portfolio",
-  "name": "Portfolio",
+  "name": "My Portfolio",
+  "short_name": "Rakshit",
+  "start_url": "https://www.rakshitmehra.me/",
+  "display": "standalone",
   "icons": [
     {
-      "src": "assests/images/RM.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "assests/img/RM.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assests/img/RM.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
-  ],
-  "start_url": "index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
