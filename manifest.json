@@ -1,7 +1,7 @@
 {
   "name": "My Portfolio",
   "short_name": "Rakshit",
-  "start_url": "https://www.rakshitmehra.me/",
+  "start_url": "/index.html",
   "display": "standalone",
   "icons": [
     {
@@ -10,9 +10,11 @@
       "type": "image/png"
     },
     {
-      "src": "assests/img/RM.png",
+      "src": "assests/img/RM.png.png",
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
 }
