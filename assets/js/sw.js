@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').then(function(registration) {
+  navigator.serviceWorker.register('assets/js/sw.js').then(function(registration) {
     console.log('Service worker registration successful:', registration.scope);
   }).catch(function(error) {
     console.log('Service worker registration failed:', error);
@@ -13,8 +13,8 @@ self.addEventListener('install', function(event) {
       return cache.addAll([
         '/',
         '/index.html',
-        '/style.css',
-        '/main.js'
+        'assets/css/style.css',
+        'assets/js/main.js'
       ]);
     })
   );
