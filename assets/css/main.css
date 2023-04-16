@@ -417,6 +417,10 @@ body {
   text-align: center;
 }
 
+.about__ol {
+  text-align: left;
+}
+
 .about__description {
   margin-bottom: 2rem;
 }
