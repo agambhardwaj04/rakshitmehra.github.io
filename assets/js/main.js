@@ -180,21 +180,11 @@ if ('serviceWorker' in navigator) {
   console.log('service worker is not supported');
 }
 
-window.addEventListener('beforeinstallprompt', e => {
-  console.log('beforeinstallprompt Event fired');
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  this.deferredPrompt = e;
-  return false;
-});
-
-function helloworld() {
-  // When you want to trigger prompt:
-  this.deferredPrompt.prompt();
-  this.deferredPrompt.userChoice.then(choice => {
-    console.log(choice);
-  });
-  this.deferredPrompt = null;
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker
+      .register("/serviceWorker.js")
+      .then(res => console.log("service worker registered"))
+      .catch(err => console.log("service worker not registered", err))
+  })
 }
-
-helloworld();
