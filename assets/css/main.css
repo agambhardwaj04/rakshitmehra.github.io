@@ -384,6 +384,11 @@ body {
   column-gap: 2rem;
 }
 
+.home__img {
+  width: 40rem;
+  border-radius: var(--b-radius);
+}
+
 .social__link {
   background-color: var(--color-gray-lighten);
   width: 4.5rem;
@@ -404,6 +409,7 @@ body {
 @media screen and (max-width: 768px) {
   .home__img {
     width: 28rem;
+    border-radius: var(--b-radius);
   }
 }
 
